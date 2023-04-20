@@ -1,11 +1,6 @@
 import pandas
 pd.options.mode.chained_assignment = None
 
-#import data
-accounts=pd.read_csv('account_booked_balance_mean_3mo_accounts.csv')
-reference_timestamps=pd.read_csv("account_booked_balance_mean_3mo_results.csv")
-transactions=pd.read_csv("account_booked_balance_mean_3mo_transactions.csv")
-
 def average_booked_balance_from(transactions: pandas.DataFrame,
                                 accounts: pandas.DataFrame,
                                 reference_timestamps: pandas.DataFrame) -> pandas.Series:
